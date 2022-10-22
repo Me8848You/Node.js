@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Profile</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .main {
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+            height: 600px;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            margin: 45px;
+            padding: 45px;
+        }
+
+        .main img {
+            border: 2px solid purple;
+            border-radius: 50%;
+
+        }
+
+        h2 {
+            color: white;
+            font-family: cursive;
+            font-weight: 800;
+            font-size: 37px;
+            width: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main">
+    
+        <!-- <h1>I connected to the database bata aako data called user </h1> -->
+        <p>
+            Hii <%= user.name%> <br>
+            i am from = <%= user.city%> <br>
+            and i am = <%= user.age%> old
+
+                        <!-- foreach loop lagaune kam garaum hai yeha for skills  -->
+
+                        <h1>Skills haru yehi ta xann</h1> 
+
+
+                        <p>
+                            <% user.skills.forEach((item)=>{%>
+                                <ul>
+                                    <li>
+                                        <%= item %>
+                                    </li>
+                                </ul>
+                                <%}) %>
+                        </p>
+
+                    </p>
+
+    </div>
+
+</body>
+
+</html>
