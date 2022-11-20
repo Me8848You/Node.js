@@ -1,0 +1,22 @@
+The Point to be noted ***
+
+1. Javascript is single threaded language That's why node.js 
+2. js single threaded language vaye pani yesle non-blocking i/o model(Asynchoronous Programming Model) ma kam garne huna le yesko efficiency ma kunai farak pardaina . That why node.js single threaded vaye pani still use garinxa .
+
+Non-blocking I/O Model --> " Aafulai kam garna time lagne vayo vane arko lai kam garna dinxa aafule pani garxa side ma , aafule nasakesamma rokera rakhne kam gardain "
+
+3. Synchronous Programming: File system ma kehi kura haru garnu parema yo use hunxa.
+    Blocking Mode ma kam garxa . i.e Aafule kam nasakunjel aarulai garna didaina . 
+
+
+4. Ejs templete Engine 
+    khas ma templete Engine haru dynamic page banauna lai use hunxa 
+    ejs ko main kura "views" vanne directory ma hunxa yeslai direct access garna sakinxa 
+    like res.render(".ejs extension vako page inside views directory"); 
+
+    Database bata liyeko data lai dekhauna use hunxa 
+
+    hamle user vannne object lai render garera pass gareko xamm profile ma ani teha <% garera fetch pani gareko xamm 
+
+
+
