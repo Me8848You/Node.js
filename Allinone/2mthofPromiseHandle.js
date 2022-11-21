@@ -13,10 +13,10 @@ dbConnect().then((resp)=>{
 
 //  promise Handling METHODS 002 
 
-const main=async ()=>{
-  console.log("main function called");  
-  let data= await dbConnect();  
-  data=await data.find().toArray(); 
-  console.log(data);  
-}
-main()
+// const main=async ()=>{
+//   console.log("main function called");  
+//   let data= await dbConnect();  
+//   data=await data.find().toArray(); 
+//   console.log(data);  
+// }
+// main()
