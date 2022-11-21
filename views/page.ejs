@@ -4,19 +4,36 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div class="header">
-       <h1> This is header section</h1>
 
-       <h2>Welcome My Programming Idol,----->  <%= user.name%>  </h2>
-       <h2>But i live in ,----->  <%= user.country%>  </h2>
-       <div class="img"><img src="../folderhtml/avatar.jpg" alt=""></div> 
+
+        <!-- header section imported form header.ejs  -->
+
+        <%- include("./common/header.ejs")%>
+
+        <h2>Welcome My Programming Idol,-----> <%= user.name%>  </h2>
+        <h2>But i live in -----> <%= user.country%>
+        </h2>
+
+        <!-- looping start from here  -->
+        <ul>
+            <% user.skills.forEach((items)=>{ %>
+                <li>
+                    <%= items %>
+                </li>
+                <% }) %>
+        </ul>
+
     </div>
 </body>
+
 </html>

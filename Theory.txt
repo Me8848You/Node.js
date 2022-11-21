@@ -20,3 +20,15 @@ Non-blocking I/O Model --> " Aafulai kam garna time lagne vayo vane arko lai kam
 
 
 
+5. euta .ejs file vitra arko .ejs file lai include garna yo syntax use gara..
+        <%- include('filepath')  %>
+
+
+6. Mongodb connection
+        some terms:
+        cluster=jasvitra databse & collections hunxa 
+        node.js ko code snga Mongodb database connect garne tarika dherai xann for eg.
+                MongoDB cloud----> online mai sabai kam hunxa 
+                MongoDB compass---> tmro local device ma kam hunxa 
+
+                

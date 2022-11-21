@@ -1,26 +1,4 @@
-// const express=require("express"); 
-// const app=express();  
 
-// const mongoose=require('MongoDB')
-
-// const uri="mongodb+srv://node321:node321@nodecluster.4ybqagf.mongodb.net/test"; 
-
-// async function connect(){
-//   try{
-//     await mongoose.connect(uri);  
-
-//     console.log("Database connected Successfully!");  
-//   }
-//   catch(err){
-//     console.warn(err);  
-//   }
-// }
-
-// connect();  
-
-// app.listen(3000,(err,_)=>{
-//   console.log("Have a look at 3000 port");  
-// })
 
 const { MongoClient } = require('mongodb');
 // or as an es module:
