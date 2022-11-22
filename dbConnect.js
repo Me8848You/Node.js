@@ -17,9 +17,6 @@ async function dbConnect() {
   const db = client.db(dbName);
 
   return (collection = db.collection("videos"));
-
-  return "done.";
 }
 
-
-module.exports=dbConnect;   
+module.exports = dbConnect;
